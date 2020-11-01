@@ -1,0 +1,26 @@
+body {
+  direction: rtl !important;
+  text-align: right !important;
+
+  font-family: vazir;
+}
+
+* {
+  box-sizing: border-box;
+  direction: inherit !important;
+  text-align: inherit !important;
+}
+
+#sidebar > ul {
+  padding-right: 0;
+}
+
+.dropdown-toggle::after {
+  left: 20px !important;
+  right: auto;
+}
+
+.rounded-left-5 {
+  border-radius: 18px 0 0 18px;
+  overflow: hidden;
+}
