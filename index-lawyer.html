@@ -131,31 +131,116 @@
       </div>
       <!-- main content -->
       <main>
+        <!-- statistics -->
+        <div class="row">
+          <div class="col-7">
+            <div class="card rounded">
+              <div class="d-flex align-items-center justify-content-between p-3">
+                <p class="m-0">بازدید پروفایل</p>
+                <!-- <label class="mr-sm-2" for="Views">تاریخ</label> -->
+                <select class="custom-select w-25" id="Views">
+                  <option selected>تاریخ...</option>
+                  <option value="1">تاریخ</option>
+                  <option value="2">تاریخ</option>
+                  <option value="3">تاریخ</option>
+                </select>
+              </div>
+              <!-- Chart -->
+              <div class="text-center">
+                <canvas id="myChart" width="600" height="400"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="bg-primary rounded">
+              <div class="d-flex justify-content-between">
+                <div class="p-2 px-3 text-white">
+                  <p class="small mb-2 text-white">رتبه شما: <span
+                      class="bg-dark px-2 rounded-pill mb-0 text-white">12</span></p>
+                  <p class="small mb-2 text-white">امتیاز شما: <span
+                      class="bg-dark px-2 rounded-pill mb-0 text-white">12</span></p>
+                  <p class="small mb-2 text-white">جایگاه شما: <span
+                      class="bg-dark px-2 rounded-pill mb-0 text-white">12</span></p>
+                </div>
+                <div class="p-3">
+                  <img src="#" alt="#">
+                </div>
+              </div>
+              <div class="line my-2"></div>
+              <div class="row px-2 pt-3 pr-3 pb-3 mb-3">
+                <div class="col mb-5 text-white d-flex">
+                  <span class="ml-3">icon</span>
+                  <div>
+                    <p class="text-white mb-0">0</p>
+                    <p class="text-white mb-0 small">مشاوره حضوری</p>
+                  </div>
+                </div>
+                <div class="col mb-5 text-white d-flex">
+                  <span class="ml-3">icon</span>
+                  <div>
+                    <p class="text-white mb-0">0</p>
+                    <p class="text-white mb-0 small">مشاوره حضوری</p>
+                  </div>
+                </div>
+                <div class="col mb-5 text-white d-flex">
+                  <span class="ml-3">icon</span>
+                  <div>
+                    <p class="text-white mb-0">0</p>
+                    <p class="text-white mb-0 small">مشاوره حضوری</p>
+                  </div>
+                </div>
+                <div class="col mb-5 text-white d-flex">
+                  <span class="ml-3">icon</span>
+                  <div>
+                    <p class="text-white mb-0">0</p>
+                    <p class="text-white mb-0 small">مشاوره حضوری</p>
+                  </div>
+                </div>
+                <div class="col mb-5 text-white d-flex">
+                  <span class="ml-3">icon</span>
+                  <div>
+                    <p class="text-white mb-0">0</p>
+                    <p class="text-white mb-0 small">مشاوره حضوری</p>
+                  </div>
+                </div>
+                <div class="col mb-5 text-white d-flex">
+                  <span class="ml-3">icon</span>
+                  <div>
+                    <p class="text-white mb-0">0</p>
+                    <p class="text-white mb-0 small">مشاوره حضوری</p>
+                  </div>
+                </div>
+                <div class="col mb-5 text-white d-flex">
+                  <span class="ml-3">icon</span>
+                  <div>
+                    <p class="text-white mb-0">0</p>
+                    <p class="text-white mb-0 small">مشاوره حضوری</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-6">
             <div class="card">
               <div class="p-3 d-flex align-items-center border-bottom">
                 <div><img src="#" alt="#"><span>مشاوره های آنلاین</span></div>
-                <button class="rounded-0 btn btn-outline-primary mr-auto mr-auto">
-                  ثبت مشاوره جدید
-                </button>
+                <label class="switch mr-auto">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
               </div>
               <div class="card-body py-0 row">
-                <div class="col py-1 border-left">
-                  <p class="text-muted">کل</p>
-                  <span class="d-block">0</span>
-                  <a class="btn-link small" href="#">مشاهده</a>
+                <div class="pt-2 d-flex">
+                <h5>مشاوره</h5><button class="btn btn-success small px-2 py-0 mr-2">فعال</button>
                 </div>
-                <div class="col py-1 border-left">
-                  <p class="text-muted">کل</p>
-                  <span class="d-block">0</span>
-                  <a class="btn-link small" href="#">مشاهده</a>
-                </div>
-                <div class="col py-1">
-                  <p class="text-muted">کل</p>
-                  <span class="d-block">0</span>
-                  <a class="btn-link small" href="#">مشاهده</a>
-                </div>
+                <p class="small p-3">
+                  فعالسازی ایمیل با فعالسازی بات تلگرام بنیاد وکلا، علاوه بر دریافت اعلان های حساب کاربری خود، از
+                  جدید‌ترین اخبار و
+                  اطلاع‌رسانی های مجموعه بنیاد وکلا مطلع شوید.
+                </p>
               </div>
             </div>
           </div>
@@ -163,26 +248,23 @@
             <div class="card">
               <div class="p-3 d-flex align-items-center border-bottom">
                 <div><img src="#" alt="#"><span>مشاوره های آنلاین</span></div>
-                <button class="rounded-0 btn btn-outline-primary mr-auto mr-auto">
-                  ثبت مشاوره جدید
-                </button>
+                <label class="switch mr-auto">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
               </div>
               <div class="card-body py-0 row">
-                <div class="col py-1 border-left">
-                  <p class="text-muted">کل</p>
-                  <span class="d-block">0</span>
-                  <a class="btn-link small" href="#">مشاهده</a>
+                <div class="pt-2 d-flex">
+                <h5>مشاوره</h5>
+                <button class="btn btn-danger small px-2 py-0 mr-2">غیرفعال</button>
                 </div>
-                <div class="col py-1 border-left">
-                  <p class="text-muted">کل</p>
-                  <span class="d-block">0</span>
-                  <a class="btn-link small" href="#">مشاهده</a>
-                </div>
-                <div class="col py-1">
-                  <p class="text-muted">کل</p>
-                  <span class="d-block">0</span>
-                  <a class="btn-link small" href="#">مشاهده</a>
-                </div>
+                <p class="small p-3">
+                  فعالسازی ایمیل با فعالسازی بات تلگرام بنیاد وکلا، علاوه بر دریافت اعلان های حساب کاربری خود، از
+                  جدید‌ترین اخبار و
+                  اطلاع‌رسانی های مجموعه بنیاد وکلا مطلع شوید.
+                </p>
+
+
               </div>
             </div>
           </div>
@@ -260,14 +342,10 @@
     <script src="./src//js/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="./src/js/bootstrap.bundle.min.js"></script>
-
-    <script type="text/javascript">
-            // $(document).ready(function () {
-            //     $('#sidebarCollapse').on('click', function () {
-            //         $('#sidebar').toggleClass('active');
-            //     });
-            // });
-    </script>
+    <!-- chart JS -->
+    <script src="./src/js/Chart.min.js"></script>
+    <!-- custom js -->
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
